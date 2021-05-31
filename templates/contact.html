@@ -6,19 +6,25 @@
 {% block body %}
 
 <div class="container">
-    <h1>Home Page - Welcome to codeloop.org</h1>
-<h3>Tutorial Number 5 </h3>
-
-<p>
-In this tutorial we are going to talk
-about flask Adding Bootstrap Styles.
+    <div class="row mt-5">
+        <div class="col-md-8 m-auto">
+            <form action="" method="post">
+                <div class="card">
+                    <div class="card-header bg-success text-white text-center"><h2>Please Fill This Form To Contact Us</h2></div>
+                    <div class="card-body">
+                        <input type="text" class="form-control form-group"placeholder="enter your full name">
+                        <input type="email" class="form-control form-group"placeholder="Enter Your Email">
+                        <input type="number" class="form-control form-group"placeholder="Enter Your Contact Number">
+                        <textarea name="" id="" cols="30" rows="10" class="form-group form-control"placeholder="text note more then 200 Character"></textarea>
+                    </div>
+                    <div class="card-footer bg-success"><input type="button" value="Submit" class="form-group form-control bg-success text-white" ></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 </p>
-
-
-<h1>Welcome to . {{data}}</h1>
-
-
 </div>
 
 {% endblock %}

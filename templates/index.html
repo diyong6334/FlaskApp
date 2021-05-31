@@ -6,19 +6,32 @@
 {% block body %}
 
 <div class="container">
-    <h1>Home Page - Welcome to my flask app</h1>
-<h3>Tutorial Number 5 </h3>
-
-<p>
-In this tutorial we are going to talk
-about flask Adding Bootstrap Styles.
-
-</p>
-
-
-<h1>Welcome to . {{data}}</h1>
-
-
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron p-3">
+                <h2>Manage <b>Employees</b><button class="btn btn-success float-right" data-toggle='modal' data-target="#mymodal"> Add new Employees</button></h2>
+                <table class="table table-hover table-dark">
+                    <tr>
+                        <td>ID</td>
+                        <td>Name</td>
+                        <td>Email</td>
+                        <td>Phone</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>01</td>
+                        <td>Diyong Stephen Talba</td>
+                        <td>stephendiyong@gmail.com</td>
+                        <td>+ 23480566800</td>
+                        <td><a href="" class="btn btn-warning btn=xs" data-toggle="modal" data-target="#modaledit">Edit</a></td>
+                        <td><a href="" class="btn btn-danger btn=xs" onclick="return confirm('Are you sure you want to delete?')">Delete</a></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
 </div>
+
 
 {% endblock %}
